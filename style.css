@@ -1,0 +1,427 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #0E0E0E;
+    
+    
+}
+
+h1, h2, h3{
+    color:aliceblue;
+}
+
+.name{
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.right{
+    width: 600px;
+    display: inline-block;
+    vertical-align: auto;
+    float: right;
+    height: auto;
+    font-family: 'Inter', sans-serif;
+    padding: 0 100px;
+    margin-top: 40px;
+   
+  
+    
+    
+}
+
+.sidebar{
+    width: 400px;
+    height: 250px;
+    display: inline-block;
+    float: left;
+    position: fixed;
+    padding: 0 150px;
+    font-family: 'Inter', sans-serif;
+    margin-top: 50px;
+}
+
+.navigation{
+    color: #BEBECB;
+    font-size: 17px;
+    line-height: 1.8;
+    text-decoration: none;
+    transition: font-size 1s;
+    
+}
+
+ul{
+   list-style: none;
+   
+}
+ul li::before{
+    content:"";
+    color: #BEBECB;
+    margin-right: 5px;
+    
+}
+
+
+
+
+nav{
+    margin-top: 100px;
+}
+
+.socmed{
+    color:#C4C4CD;
+    font-size: 25px;
+    margin-top: 80px;
+    letter-spacing: 5px;
+}
+
+.about{
+    margin-bottom: 100px;
+    scroll-margin-top: 100px;
+}
+
+i, a{
+    color: #BEBECB;
+    text-decoration: none;
+}
+
+b, strong{
+    color:aliceblue;
+}
+
+p, span{
+    font-size: 14px;
+    color: #BEBECB;
+    
+}
+
+.blue{
+    color: #3B44F0;
+    font-weight: lighter;
+    font-size: 20px;
+   
+}
+
+#technologies{
+    scroll-margin-top: 70px;
+}
+
+#experience{
+    scroll-margin-top: 70px;
+}
+
+#projects{
+    scroll-margin-top: 70px;
+}
+.tech-icons{
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   margin-bottom: 100px;
+
+    
+}
+
+.flexbox{
+    width: auto;
+    height: auto;
+    background: #232eff33;
+    color: white;
+    text-align: center;
+    line-height: 0px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 7px;
+    padding: 10px;
+    font-size: 13px;
+    
+    
+    
+}
+
+.job{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+    
+}
+
+.date{
+    width: 200px;
+    margin-right: 50px;
+    font-size: 10px;
+   
+}
+
+.title{
+    width: 700px;
+    margin-top: 13px;
+  
+}
+
+.resume{
+    margin-bottom: 100px;
+    font-weight:900;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.image{
+    width: 140px;
+    height: 80px;
+    border-radius: 10px;
+    margin-top: 20px;
+   
+    
+}
+
+.project-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    
+   
+    
+}
+
+.description{
+    width: 400px;
+    height: auto;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+
+}
+
+.pt{
+    width: auto;
+    height: auto;
+    background: #232eff2b;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 3px;
+    padding: 7px;
+    font-size: 13px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.footer{
+    height: 100px;
+    width: auto;
+    margin-top: 100px;
+}
+
+b:hover, h1:hover, h2:hover, h3:hover, strong:hover, i:hover, .j:hover, .resume:hover, .navigation:hover{
+    color: #3B44F0;
+}
+
+.cursor{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #1a49f4a9;
+    transition: 0.1s;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+
+@media (max-width: 1200px) {
+    .right{
+        width: 400px;
+        
+    }
+}
+
+@media (max-width: 992px) {
+    .right{
+        width: 400px;
+        padding-right: 60px;
+    }
+
+    .sidebar{
+        padding-left: 60px;
+        
+    }
+}
+
+
+@media (max-width: 768px){
+    
+    .sidebar{
+        padding: 0px 20px;
+        width: 280px;
+    }
+
+    .name{
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 18px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .navigation{
+        font-size: 10px;
+        padding: 0px 5px;
+        
+    }
+
+    .socmed{
+        font-weight:100;
+    }
+
+    .right{
+        width: 400px;
+        padding: 0px 20px;
+        
+    }
+
+    p{
+        font-size: 10px;
+    }
+
+    .blue{
+        font-size: 15px;
+    }
+    
+    .flexbox{
+        font-size: 10px;
+    }
+
+
+}
+
+@media (max-width: 600px){
+    html{
+        width: 100%;
+    }
+
+    .sidebar{
+        position: sticky;
+        padding: 0px;
+        width: 100%;
+        height: 200px;
+        margin-top: 10px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name{
+        width: 100%;
+        font-size: 40px;
+        margin-top: 10px;
+        padding: 5px 0px;
+    }
+
+    h2{
+        padding: 5px 0px;
+        margin: 0px;
+    }
+
+    nav{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    ul{
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        font-size: 0px;
+    }
+
+    .navigation{
+        display: none;
+        margin: 0px;
+        padding: 10px 0px;
+    }
+
+    .socmed{
+        margin: 0px;
+    }
+
+    
+
+
+    .right{
+        justify-content: center;
+        padding: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about, #technologies, .tech-icons, #exp, .resume, section, .footer{
+        margin-left: 20px;
+        width: 100%;
+    }
+
+   p{
+    font-size: 15px;
+   }
+
+   .blue{
+    font-size: 25px;
+   }
+
+   b{
+    font-size: 20px;
+   }
+
+   .job{
+    flex-direction: column;
+   }
+
+   .pi{
+    width: 80%;
+   }
+
+   .project-container{
+    display: flex;
+    flex-direction: column-reverse;
+    width:100%;
+   }
+
+   .description{
+    margin: 0px;
+    width: 100%;
+   }
+   
+   .image{
+    height: 120px;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+   } 
+}
+
+
+@media(max-width: 360px){
+    .sidebar, #about, #technologies, .tech-icons, #exp, .resume, section, .footer{
+        margin: 5px;
+    }
+
+    .pi{
+        width: 340px;
+    }
+
+    b{
+       font-size: 15px;
+    }
+}
